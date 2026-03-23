@@ -1,0 +1,14 @@
+[package]
+name = "wasmtime-bench"
+edition = "2024"
+
+[dependencies]
+wasmtime = { version = "38.0.3", path = "../wasmtime/crates/wasmtime" }
+wasmtime-cli = { version = "38.0.3", path = "../wasmtime" }
+
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "host_call"
+harness = false
