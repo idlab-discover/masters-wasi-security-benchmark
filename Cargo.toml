@@ -3,8 +3,9 @@ name = "wasmtime-bench"
 edition = "2024"
 
 [dependencies]
-wasmtime = { version = "38.0.3", path = "../wasmtime/crates/wasmtime" }
-wasmtime-cli = { version = "38.0.3", path = "../wasmtime" }
+serde_yaml = "0.9.34"
+wasmtime = { package = "wasmtime", version = "38.0.3", path = "../wasmtime/crates/wasmtime" }
+wasmtime_v38_0_3 = { package = "wasmtime", version = "38.0.3" }
 
 [dev-dependencies]
 criterion = "0.8.2"

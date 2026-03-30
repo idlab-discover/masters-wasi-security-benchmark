@@ -1,0 +1,9 @@
+default-mode: deny
+
+packages:
+  bench:host:
+    interfaces:
+      api:
+        functions:
+          my-host-func:
+            allow: true

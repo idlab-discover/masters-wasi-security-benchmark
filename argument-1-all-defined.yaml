@@ -1,0 +1,15 @@
+default-mode: deny
+
+packages:
+  bench:host:
+    interfaces:
+      api:
+        functions:
+          my-host-func:
+            allow: true
+            arguments:
+              - mode: allow-list
+                u32: [42,10,30,12451, 125]
+              - mode: no-constraint
+              - mode: no-constraint
+              - mode: no-constraint
