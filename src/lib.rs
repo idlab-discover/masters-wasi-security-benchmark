@@ -1,6 +1,23 @@
+#[cfg(feature = "branch-blocking")]
 use std::sync::Arc;
 
-use wasmtime::{Engine, Store, component::{Component, Linker, TypedFunc, WasmPolicy}};
+#[cfg(not(any(
+    feature = "branch-blocking",
+    feature = "branch-opa-local",
+    feature = "branch-opa-test",
+    feature = "branch-upstream"
+)))]
+compile_error!("Enable one branch feature: branch-blocking, branch-opa-local, branch-opa-test, or branch-upstream");
+
+#[cfg(any(
+    all(feature = "branch-blocking", feature = "branch-opa-local"),
+    all(feature = "branch-blocking", feature = "branch-opa-test"),
+    all(feature = "branch-blocking", feature = "branch-upstream"),
+    all(feature = "branch-opa-local", feature = "branch-opa-test"),
+    all(feature = "branch-opa-local", feature = "branch-upstream"),
+    all(feature = "branch-opa-test", feature = "branch-upstream")
+))]
+compile_error!("Enable exactly one branch feature at a time.");
 
 pub const COMPONENT_WAT: &str = r#"
     (component
@@ -35,7 +52,18 @@ pub const COMPONENT_WAT: &str = r#"
 "#;
 
 
-pub fn instantiate_new_testcase(path: Option<&str>) -> (TypedFunc<(u32, u32, u32, u32), (u32,)>, Store<()>) {
+#[cfg(feature = "branch-blocking")]
+pub fn instantiate_new_testcase(
+  path: Option<&str>,
+) -> (
+  wasmtime_blocking_rules_policy_file::component::TypedFunc<(u32, u32, u32, u32), (u32,)>,
+  wasmtime_blocking_rules_policy_file::Store<()>,
+) {
+  use wasmtime_blocking_rules_policy_file::{
+    Engine, Store,
+    component::{Component, Linker, WasmPolicy},
+  };
+
     let policy: WasmPolicy;
     if path.is_none() {
         policy = WasmPolicy::new_no_file();

@@ -2,9 +2,18 @@
 name = "wasmtime-bench"
 edition = "2024"
 
+[features]
+default = ["branch-blocking"]
+branch-blocking = []
+branch-opa-local = []
+branch-opa-test = []
+branch-upstream = []
+
 [dependencies]
 serde_yaml = "0.9.34"
-wasmtime = { package = "wasmtime", version = "38.0.3", path = "../wasmtime/crates/wasmtime" }
+wasmtime_blocking_rules_policy_file = { package = "wasmtime", git = "https://github.com/idlab-discover/masters-wasi-security", branch = "blocking_rules_policy_file" }
+wasmtime_opa_local = { package = "wasmtime", git = "https://github.com/idlab-discover/masters-wasi-security", branch = "OPA_local" }
+wasmtime_opa_test = { package = "wasmtime", git = "https://github.com/idlab-discover/masters-wasi-security", branch = "OPA_test" }
 wasmtime_v38_0_3 = { package = "wasmtime", version = "38.0.3" }
 
 [dev-dependencies]
