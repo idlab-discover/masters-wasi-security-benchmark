@@ -1,1 +1,8 @@
 /target
+.opa
+.envrc
+.vscode
+.direnv
+outp.json
+e2e/guests/bin/
+e2e/test_runtimes/

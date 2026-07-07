@@ -353,7 +353,7 @@ dependencies = [
 [[package]]
 name = "cranelift-assembler-x64"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-assembler-x64-meta 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
 ]
@@ -386,7 +386,7 @@ dependencies = [
 [[package]]
 name = "cranelift-assembler-x64-meta"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-srcgen 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
 ]
@@ -419,7 +419,7 @@ dependencies = [
 [[package]]
 name = "cranelift-bforest"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-entity 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
 ]
@@ -454,7 +454,7 @@ dependencies = [
 [[package]]
 name = "cranelift-bitset"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "serde",
  "serde_derive",
@@ -525,7 +525,7 @@ dependencies = [
 [[package]]
 name = "cranelift-codegen"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "bumpalo",
  "cranelift-assembler-x64 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
@@ -602,7 +602,7 @@ dependencies = [
 [[package]]
 name = "cranelift-codegen-meta"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-assembler-x64-meta 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
  "cranelift-codegen-shared 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
@@ -637,7 +637,7 @@ source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=OPA
 [[package]]
 name = "cranelift-codegen-shared"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 
 [[package]]
 name = "cranelift-codegen-shared"
@@ -664,7 +664,7 @@ dependencies = [
 [[package]]
 name = "cranelift-control"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "arbitrary",
 ]
@@ -701,7 +701,7 @@ dependencies = [
 [[package]]
 name = "cranelift-entity"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-bitset 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
  "serde",
@@ -744,7 +744,7 @@ dependencies = [
 [[package]]
 name = "cranelift-frontend"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-codegen 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
  "log",
@@ -777,7 +777,7 @@ source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=OPA
 [[package]]
 name = "cranelift-isle"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 
 [[package]]
 name = "cranelift-isle"
@@ -808,7 +808,7 @@ dependencies = [
 [[package]]
 name = "cranelift-native"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-codegen 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
  "libc",
@@ -839,7 +839,7 @@ source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=OPA
 [[package]]
 name = "cranelift-srcgen"
 version = "0.125.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 
 [[package]]
 name = "cranelift-srcgen"
@@ -1038,7 +1038,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -1845,7 +1845,7 @@ dependencies = [
 [[package]]
 name = "pulley-interpreter"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cranelift-bitset 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
  "log",
@@ -1888,7 +1888,7 @@ dependencies = [
 [[package]]
 name = "pulley-macros"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2176,7 +2176,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -2903,7 +2903,7 @@ dependencies = [
 [[package]]
 name = "wasmtime"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "addr2line",
  "anyhow",
@@ -3075,7 +3075,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-environ"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cpp_demangle",
@@ -3166,7 +3166,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-cache"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "base64",
@@ -3233,7 +3233,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-component-macro"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "proc-macro2",
@@ -3272,7 +3272,7 @@ source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=OPA
 [[package]]
 name = "wasmtime-internal-component-util"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 
 [[package]]
 name = "wasmtime-internal-component-util"
@@ -3337,7 +3337,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-cranelift"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cfg-if",
@@ -3420,7 +3420,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-fiber"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cc",
@@ -3471,7 +3471,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-jit-debug"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "cc",
  "object",
@@ -3516,7 +3516,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-jit-icache-coherence"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cfg-if",
@@ -3555,7 +3555,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-math"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "libm",
 ]
@@ -3582,7 +3582,7 @@ source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=OPA
 [[package]]
 name = "wasmtime-internal-slab"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 
 [[package]]
 name = "wasmtime-internal-slab"
@@ -3617,7 +3617,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-unwinder"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cfg-if",
@@ -3662,7 +3662,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-versioned-export-macros"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -3717,7 +3717,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-winch"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cranelift-codegen 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
@@ -3776,7 +3776,7 @@ dependencies = [
 [[package]]
 name = "wasmtime-internal-wit-bindgen"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "bitflags",
@@ -3870,7 +3870,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.61.2",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -3920,7 +3920,7 @@ dependencies = [
 [[package]]
 name = "winch-codegen"
 version = "38.0.3"
-source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#d389a96db9d719cdf4e5eb43abcf8f896550207a"
+source = "git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file#168c86ea62526370f470e2df2fb4f123df7db968"
 dependencies = [
  "anyhow",
  "cranelift-assembler-x64 0.125.3 (git+https://github.com/idlab-discover/masters-wasi-security?branch=blocking_rules_policy_file)",
@@ -4031,15 +4031,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f2f500e4d28234f72040990ec9d39e3a6b950f9f22d3dba18416c35882612bcb"
 dependencies = [
  "windows-targets 0.53.5",
-]
-
-[[package]]
-name = "windows-sys"
-version = "0.61.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ae137229bcbd6cdf0f7b80a31df61766145077ddf49416a728b02cb3921ff3fc"
-dependencies = [
- "windows-link",
 ]
 
 [[package]]

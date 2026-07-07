@@ -8,5 +8,6 @@ packages:
           my-host-func:
             allow: true
             arguments:
-              - mode: allow-list
+              0:
+                mode: allow-list
                 u32: [42,10,30,12451, 125]
