@@ -1,0 +1,7 @@
+version = "0.0.1"
+wasi_version = "preview_2"
+
+[storage]
+mount = [
+    "tmp/::/"
+]

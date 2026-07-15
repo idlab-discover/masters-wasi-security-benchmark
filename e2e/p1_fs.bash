@@ -1,0 +1,1 @@
+hyperfine -N -w 100 --runs 10000 "test_runtimes/policy1/wasmtime --policy policies/p1/fs_bench.toml guests/bin/fs_benchmark.wasm" "test_runtimes/v38_0_3/wasmtime --dir tmp/::/ guests/bin/fs_benchmark.wasm" --export-json results/p1/fs.json

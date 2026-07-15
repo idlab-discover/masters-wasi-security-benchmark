@@ -1,0 +1,62 @@
+default-mode: deny
+packages:
+  wasi:cli:
+    allow: true
+  wasi:filesystem:
+    interfaces:
+      preopens:
+        functions:
+          get-directories:
+            allow: true
+      types:
+        allow: true
+        resources:
+          descriptor:
+            functions:
+              create-directory-at:
+                allow: true
+              metadata-hash:
+                allow: true
+              metadata-hash-at:
+                allow: true
+              open-at:
+                allow: true
+              read-directory:
+                allow: true
+              read-via-stream:
+                allow: true
+              remove-directory-at:
+                allow: true
+              rename-at:
+                allow: true
+              stat-at:
+                allow: true
+              unlink-file-at:
+                allow: true
+              write-via-stream:
+                allow: true
+          directory-entry-stream:
+            functions:
+              read-directory-entry:
+                allow: true
+  wasi:io:
+    interfaces:
+      poll:
+        allow: true
+      streams:
+        resources:
+          input-stream:
+            allow: true
+            functions:
+              blocking-read:
+                allow: true
+          output-stream:
+            functions:
+              blocking-flush:
+                allow: true
+              check-write:
+                allow: true
+              subscribe:
+                allow: true
+              write:
+                allow: true

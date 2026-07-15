@@ -1,3 +1,4 @@
+#![no_main]
 /// Networking benchmark — exercises `wasi:sockets` host calls via `std::net`.
 ///
 /// Target service: a whoami HTTP endpoint reachable at 192.168.60.22:3006
@@ -18,11 +19,11 @@ use std::net::{TcpStream, ToSocketAddrs};
 // ---------------------------------------------------------------------------
 
 /// Direct IP:port — bypasses DNS so we can benchmark sockets in isolation.
-const TARGET_IP: &str = "192.168.60.22:3006";
+const TARGET_IP: &str = "127.0.0.1:3006";
 /// Hostname:port — used for DNS resolution benchmarks.
-const TARGET_HOST: &str = "whoami.blauwhuis.org:3006";
+const TARGET_HOST: &str = "localhost:3006";
 /// HTTP Host header value.
-const HTTP_HOST: &str = "whoami.blauwhuis.org";
+const HTTP_HOST: &str = "localhost";
 
 /// Number of DNS resolution iterations.
 const DNS_ITERS: usize = 20;
@@ -39,12 +40,18 @@ const POST_BODY_SIZE: usize = 65_536;
 // Entry point
 // ---------------------------------------------------------------------------
 
-fn main() {
+fn run_benchmarks() {
     dns_resolve();
     tcp_connect_cycles();
     http_get_new_connections();
     http_get_keepalive();
     http_post();
+}
+
+#[no_mangle]
+pub extern "C" fn __main_void() -> i32 {
+    run_benchmarks();
+    0
 }
 
 // ---------------------------------------------------------------------------

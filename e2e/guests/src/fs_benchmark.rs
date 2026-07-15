@@ -1,3 +1,4 @@
+#![no_main]
 use std::fs;
 use std::io::{Read, Write};
 use std::path::Path;
@@ -9,7 +10,7 @@ const FILE_SIZE: usize = 4096;
 /// Name of the benchmark working directory (created under cwd).
 const BENCH_DIR: &str = "fs_bench_workdir";
 
-fn main() {
+fn run_benchmarks() {
     let bench_dir = Path::new(BENCH_DIR);
 
     // Clean up from any prior run.
@@ -44,6 +45,12 @@ fn main() {
 
     // -- 9. Remove directories ----------------------------------------------
     remove_dirs(bench_dir);
+}
+
+#[no_mangle]
+pub extern "C" fn __main_void() -> i32 {
+    run_benchmarks();
+    0
 }
 
 // ---------------------------------------------------------------------------

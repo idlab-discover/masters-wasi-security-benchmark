@@ -1,0 +1,12 @@
+version = "0.0.1"
+wasi_version = "preview_2"
+
+[network]
+# The dns_resolve() function relies on WASI's ip-name-lookup to resolve "localhost".
+allow_ip_name_lookup = true
+
+# The benchmark establishes multiple TCP connections strictly to 127.0.0.1 on port 3006.
+# We explicitly append "/tcp" to adhere to the rule format and restrict it to the required protocol.
+connect = [
+    "127.0.0.1:3006/tcp"
+]

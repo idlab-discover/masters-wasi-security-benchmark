@@ -1,0 +1,18 @@
+version = "0.0.1"
+wasi_version = "preview_2"
+
+[network]
+allow_ip_name_lookup = true
+bind = [
+    "0.0.0.0:0",
+    ":::0"
+]
+connect = [
+    "0.0.0.0:0",
+    ":::0"
+]
+
+[storage]
+mount = [
+    "/::/"
+]

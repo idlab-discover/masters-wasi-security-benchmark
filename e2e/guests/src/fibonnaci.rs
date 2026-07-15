@@ -1,3 +1,6 @@
+#![no_std]
+#![no_main]
+
 /// Fibonacci benchmark - CPU-intensive recursive workload
 /// 
 /// This is the canonical CPU benchmark for Wasm runtimes.
@@ -13,6 +16,19 @@ fn fibonacci(n: i32) -> i64 {
     fibonacci(n - 1) + fibonacci(n - 2)
 }
 
-fn main() {
-    std::hint::black_box(fibonacci(40));
+#[panic_handler]
+fn panic(_info: &core::panic::PanicInfo) -> ! {
+    loop {}
 }
+
+#[no_mangle]
+pub extern "C" fn __wasi_init_tp() {}
+
+#[no_mangle]
+pub extern "C" fn __main_void() -> i32 {
+    core::hint::black_box(fibonacci(40));
+    0
+}
+
+#[no_mangle]
+pub extern "C" fn __wasm_call_dtors() {}

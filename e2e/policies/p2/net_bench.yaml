@@ -1,0 +1,61 @@
+default-mode: deny
+packages:
+  wasi:filesystem:
+    interfaces:
+      preopens:
+        functions:
+          get-directories:
+            allow: true
+  wasi:io:
+    allow: true
+  wasi:clocks:
+    allow: true
+  wasi:filesystem:
+    allow: true
+  wasi:cli:
+    allow: true
+  wasi:sockets:
+    interfaces:
+      instance-network:
+        functions:
+          instance-network:
+            allow: true
+      ip-name-lookup:
+        resources:
+          resolve-address-stream:
+            functions:
+              resolve-next-address:
+                allow: true
+              subscribe:
+                allow: true
+        functions:
+          resolve-addresses:
+            allow: true
+      tcp:
+        allow: true
+        resources:
+          tcp-socket:
+            functions:
+              finish-connect:
+                allow: true
+              start-connect:
+                allow: true
+              subscribe:
+                allow: true
+              start-bind:
+                allow: true
+              finish-bind:
+                allow: true
+              start-listen:
+                allow: true
+              finish-listen:
+                allow: true
+      tcp-create-socket:
+        functions:
+          create-tcp-socket:
+            allow: true
+      udp:
+        allow: true
+      udp-create-socket:
+        allow: true
+

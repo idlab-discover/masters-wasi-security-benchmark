@@ -1,0 +1,71 @@
+version = "0.0.1"
+wasi_version = "preview_2"
+arguments = ["--verbose", "--enable-all-features", "--daemon", "start", "--log-level", "trace"]
+
+[network]
+allow_ip_name_lookup = true
+bind = [
+    "0.0.0.0:0",
+    ":::0",
+    "127.0.0.1:8080/tcp",
+    "127.0.0.1:8081/tcp",
+    "127.0.0.1:8082/tcp",
+    "127.0.0.1:9000/udp",
+    "192.168.1.100:443/tcp",
+    "10.0.0.2:22/tcp",
+    "10.0.0.2:23/tcp",
+    "10.0.0.2:25/tcp",
+    "10.0.0.2:53/udp",
+    "172.16.0.5:80/tcp",
+    "172.16.0.5:443/tcp"
+]
+connect = [
+    "0.0.0.0:0",
+    ":::0",
+    "8.8.8.8:53/udp",
+    "8.8.4.4:53/udp",
+    "1.1.1.1:53/udp",
+    "192.168.1.1:80/tcp",
+    "192.168.1.1:443/tcp",
+    "10.20.30.40:8080/tcp",
+    "10.20.30.41:8080/tcp",
+    "10.20.30.42:8080/tcp",
+    "10.20.30.43:8080/tcp",
+    "10.20.30.44:8080/tcp",
+    "10.20.30.45:8080/tcp"
+]
+
+[env]
+DEBUG = "true"
+LOG_LEVEL = "trace"
+WORKSPACE_DIR = "/workspace"
+CACHE_DIR = "/var/cache/wasm"
+MAX_THREADS = "32"
+NODE_ENV = "production"
+API_ENDPOINT = "https://api.internal.network/v1"
+TIMEOUT_MS = "5000"
+RETRY_COUNT = "3"
+ENABLE_METRICS = "1"
+DATABASE_URL = "postgres://user:pass@localhost:5432/db"
+REDIS_URL = "redis://localhost:6379"
+TEMP_STORAGE = "/tmp/wasm-run"
+USER_ROLE = "admin"
+FEATURE_FLAG_X = "enabled"
+FEATURE_FLAG_Y = "disabled"
+CLUSTER_ID = "eu-west-1a"
+INSTANCE_ID = "i-0abcd1234efgh5678"
+
+[storage]
+mount = [
+    "/::/",
+    "/var/log::/var/log",
+    "/tmp::/tmp",
+]
+readonly = [
+    "/usr/bin::/usr/bin",
+    "/usr/lib::/usr/lib",
+    "/usr/lib64::/usr/lib64",
+    "/usr/share::/usr/share",
+    "/etc/ssl/certs::/etc/ssl/certs",
+    "/etc/pki/tls/certs::/etc/pki/tls/certs"
+]
